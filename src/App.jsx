@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const sites = [
-  { name: 'Amazon', color: '#FF9900', url: (q) => `https://www.amazon.fr/s?k=${encodeURIComponent(q)}&tag=gabriel0bce-21` },
+  { name: 'Amazon', color: '#FF9900', url: (q) => `https://www.amazon.fr/s?k=${encodeURIComponent(q)}&tag=comparateur2000-21` },
   { name: 'Fnac', color: '#E1251B', url: (q) => `https://www.fnac.com/SearchResult/ResultList.aspx?Search=${encodeURIComponent(q)}` },
   { name: 'Cdiscount', color: '#E4002B', url: (q) => `https://www.cdiscount.com/search/10/${encodeURIComponent(q)}.html` },
   { name: 'Darty', color: '#E2001A', url: (q) => `https://www.darty.com/nav/recherche?text=${encodeURIComponent(q)}` },
