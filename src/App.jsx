@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const sites = [
-  { name: 'Amazon', color: '#FF9900', url: (q) => `https://www.amazon.fr/s?k=${encodeURIComponent(q)}&tag=gabriel0bce-21`
+  { name: 'Amazon', color: '#FF9900', url: (q) => `https://www.amazon.fr/s?k=${encodeURIComponent(q)}&tag=gabriel0bce-21` },
   { name: 'Fnac', color: '#E1251B', url: (q) => `https://www.fnac.com/SearchResult/ResultList.aspx?Search=${encodeURIComponent(q)}` },
   { name: 'Cdiscount', color: '#E4002B', url: (q) => `https://www.cdiscount.com/search/10/${encodeURIComponent(q)}.html` },
   { name: 'Darty', color: '#E2001A', url: (q) => `https://www.darty.com/nav/recherche?text=${encodeURIComponent(q)}` },
@@ -59,7 +59,9 @@ export default function App() {
             Comparer
           </button>
         </div>
-      </div>{loading && (
+      </div>
+
+      {loading && (
         <div style={{ textAlign: 'center', marginTop: '60px' }}>
           <div style={{ width: '40px', height: '40px', border: '3px solid rgba(167,139,250,0.3)', borderTopColor: '#a78bfa', borderRadius: '50%', animation: 'spin 0.8s linear infinite', margin: '0 auto' }} />
           <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', marginTop: '16px' }}>Comparaison en cours...</p>
